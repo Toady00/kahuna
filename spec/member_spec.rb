@@ -19,4 +19,17 @@ describe Kahuna::Member do
     member.address.should eq(address)
     member.role.should eq(role)
   end
+
+  describe 'data without role information' do
+    let(:data) { "#{name} #{address}"}
+
+    it 'does not assign a role' do
+      member.role.should be_nil
+    end
+
+    it 'still assigns the name and address' do
+      member.name.should eq(name)
+      member.address.should eq(address)
+    end
+  end
 end
