@@ -2,7 +2,6 @@ module Kahuna
   class Member
     attr_reader :name, :address, :role, :raw_data
     REGEX = /([\w\.\-]+)\s+([\w\.\-]+)\s+([\w\.\-]+)/
-    EVENTS = %w(member-join member-leave member-failed)
 
     def initialize(data)
       @raw_data = data

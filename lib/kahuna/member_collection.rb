@@ -4,6 +4,8 @@ module Kahuna
   class MemberCollection
     include Enumerable
 
+    EVENTS = %w(member-join member-leave member-failed)
+
     attr_reader :raw_data
 
     def initialize(data)

@@ -17,7 +17,6 @@ describe Kahuna::MemberCollection do
     subject { mcollection }
 
     it { should respond_to :raw_data }
-    # it { should respond_to :members }
     it { should respond_to :empty? }
 
     describe '#new' do
