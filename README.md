@@ -5,6 +5,8 @@ A gem for handling [Serf](serfdom.io) events.
 _(ka-hoo-na) Hawaiian tern for a man that surfs usually with a degree of skill.
 [from rippinh2o.com](http://rippinh2o.com/dropzone/surflingo.shtml#k)_
 
+[![Gem Version](https://badge.fury.io/rb/kahuna.png)](http://badge.fury.io/rb/kahuna) [![Code Climate](https://codeclimate.com/github/Toady00/kahuna.png)](https://codeclimate.com/github/Toady00/kahuna)
+
 ## Installation
 
 Add this line to your application's Gemfile:
