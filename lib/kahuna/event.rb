@@ -1,32 +1,21 @@
-require 'kahuna/member'
+require 'kahuna/member_collection'
 
 module Kahuna
   class Event
-    attr_reader :data, :type, :name, :role, :user_event, :user_ltime
+    attr_reader :type, :name, :role, :user_event, :user_ltime, :members
 
     def initialize(data)
-      @data = data
       @type = ENV['SERF_EVENT']
       @name = ENV['SERF_SELF_NAME']
       @role = ENV['SERF_SELF_ROLE']
       @user_event = ENV['SERF_USER_EVENT']
       @user_ltime = ENV['SERF_USER_LTIME']
-      process_members
-    end
-
-    def members
-      @members ||= []
+      @members = process_members data
     end
 
   private
-    def process_members
-      if Member::EVENTS.include? type
-        add_member(Member.new self.data)
-      end
-    end
-
-    def add_member(member)
-      members << member
+    def process_members(data)
+      MemberCollection.new(data) if MemberCollection::EVENTS.include? type
     end
   end
 end
