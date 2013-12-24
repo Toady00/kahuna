@@ -19,7 +19,6 @@ describe Kahuna::Event do
   it { should respond_to :role }
   it { should respond_to :user_event }
   it { should respond_to :user_ltime }
-  it { should respond_to :members }
 
   describe "membership events" do
     let(:name)    { "brandon.local" }
@@ -31,6 +30,8 @@ describe Kahuna::Event do
       ENV['SERF_EVENT']     = "member-join"
       ENV['SERF_SELF_NAME'] = name
       ENV['SERF_SELF_ROLE'] = role
+      ENV.delete 'SERF_USER_EVENT'
+      ENV.delete 'SERF_USER_LTIME'
       @event = Kahuna::Event.new data
     end
 
@@ -47,12 +48,6 @@ describe Kahuna::Event do
 
     it 'does not set the user_ltime' do
       @event.user_ltime.should be_nil
-    end
-
-    describe '#new' do
-      it 'creates a member_collection from the event data' do
-        @event.members.should be_a Kahuna::MemberCollection
-      end
     end
   end
 
@@ -79,12 +74,6 @@ describe Kahuna::Event do
 
     it 'does set the user_ltime' do
       @event.user_ltime.should eq(ENV['SERF_USER_LTIME'])
-    end
-
-    describe '#new' do
-      it 'does not create a member collection' do
-        @event.members.should be_nil
-      end
     end
   end
 end
