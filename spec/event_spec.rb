@@ -14,6 +14,7 @@ describe Kahuna::Event do
 
   subject { event }
 
+  it { should respond_to :raw_data }
   it { should respond_to :type }
   it { should respond_to :name }
   it { should respond_to :role }

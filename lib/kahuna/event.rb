@@ -1,8 +1,9 @@
 module Kahuna
   class Event
-    attr_reader :type, :name, :role, :user_event, :user_ltime
+    attr_reader :raw_data, :type, :name, :role, :user_event, :user_ltime
 
     def initialize(data)
+      @raw_data = data
       @type = ENV['SERF_EVENT']
       @name = ENV['SERF_SELF_NAME']
       @role = ENV['SERF_SELF_ROLE']
