@@ -1,5 +1,8 @@
 # Kahuna
 
+_(ka-hoo-na) Hawaiian tern for a man that surfs usually with a degree of skill.
+http://rippinh2o.com/dropzone/surflingo.shtml_
+
 TODO: Write a gem description
 
 ## Installation
