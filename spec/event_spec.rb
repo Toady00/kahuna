@@ -1,4 +1,4 @@
-require 'kahuna/event'
+require 'spec_helper'
 
 describe Kahuna::Event do
   env_map = {

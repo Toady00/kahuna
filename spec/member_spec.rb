@@ -1,4 +1,4 @@
-require 'kahuna/member'
+require 'spec_helper'
 
 describe Kahuna::Member do
   let(:name)    { "brandon.local" }

@@ -1,4 +1,4 @@
-require 'kahuna/handler'
+require 'spec_helper'
 
 describe Kahuna::Handler do
 

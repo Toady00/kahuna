@@ -1,5 +1,3 @@
-require 'kahuna/member_collection'
-require 'kahuna/member'
 require 'spec_helper'
 
 describe Kahuna::MemberCollection do
@@ -59,11 +57,11 @@ describe Kahuna::MemberCollection do
     end
 
     describe '#empty?' do
-      it 'returns true if there are no members' do
+      it 'is empty if there are no members' do
         mcollection.should be_empty
       end
 
-      it 'returns false if these are members in the collection' do
+      it 'is not empty if these are members in the collection' do
         mcollection << member
         mcollection.should_not be_empty
       end
