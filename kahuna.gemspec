@@ -28,4 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry"
   spec.add_development_dependency "factory_girl", "~> 4.3.0"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "travis", "~> 1.6.0"
 end

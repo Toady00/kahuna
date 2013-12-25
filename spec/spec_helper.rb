@@ -1,7 +1,12 @@
-require 'simplecov'
-
 GEM_ROOT = File.expand_path("../../", __FILE__)
 $:.unshift File.join(GEM_ROOT, "lib")
+
+if ENV["TRAVIS"]
+  require 'coveralls'
+  Coveralls.wear!
+else
+  require 'simplecov'
+end
 
 require 'rspec'
 require 'factory_girl'

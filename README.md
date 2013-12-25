@@ -5,7 +5,7 @@ A gem for handling [Serf](serfdom.io) events.
 _(ka-hoo-na) Hawaiian term for a man that surfs usually with a degree of skill.
 [from rippinh2o.com](http://rippinh2o.com/dropzone/surflingo.shtml#k)_
 
-[![Build Status](https://travis-ci.org/Toady00/kahuna.png)](https://travis-ci.org/Toady00/kahuna) [![Gem Version](https://badge.fury.io/rb/kahuna.png)](http://badge.fury.io/rb/kahuna) [![Code Climate](https://codeclimate.com/github/Toady00/kahuna.png)](https://codeclimate.com/github/Toady00/kahuna) [![Dependency Status](https://gemnasium.com/Toady00/kahuna.png)](https://gemnasium.com/Toady00/kahuna)
+[![Gem Version](https://badge.fury.io/rb/kahuna.png)](http://badge.fury.io/rb/kahuna) [![Build Status](https://travis-ci.org/Toady00/kahuna.png)](https://travis-ci.org/Toady00/kahuna) [![Code Climate](https://codeclimate.com/github/Toady00/kahuna.png)](https://codeclimate.com/github/Toady00/kahuna) [![Coverage Status](https://coveralls.io/repos/Toady00/kahuna/badge.png)](https://coveralls.io/r/Toady00/kahuna) [![Dependency Status](https://gemnasium.com/Toady00/kahuna.png)](https://gemnasium.com/Toady00/kahuna)
 
 ## Installation
 
