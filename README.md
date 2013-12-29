@@ -32,7 +32,7 @@ require 'kahuna'
 
 data = ''
 while line = Readline.readline('', true)
-  data += line
+  data += "#{line}\n"
 end
 
 Kahuna::Handler.new(data) do |event, members|
@@ -41,6 +41,8 @@ end.execute
 
 exit 0
 ```
+
+_Note: Kahuna expects each line to be separated by a newline (\n) character._
 
 Make the file executable
 
